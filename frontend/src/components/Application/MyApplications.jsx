@@ -142,12 +142,24 @@ const JobSeekerCard = ({ element, deleteApplication, openModal }) => {
           </p>
         </div>
         <div className="resume">
-          <img
+          {/* <img
             src={element.resume.url}
             alt="resume"
             onClick={() => openModal(element.resume.url)}
-          />
+          /> */}
+          {element.resume.url.endsWith(".pdf") ? (
+            <a href={element.resume.url} target="_blank" rel="noopener noreferrer">
+              View/Download Resume
+            </a>
+          ) : (
+            <img
+              src={element.resume.url}
+              alt="resume"
+              onClick={() => openModal(element.resume.url)}
+            />
+          )}
         </div>
+
         <div className="btn_area">
           <button onClick={() => deleteApplication(element._id)}>
             Delete Application
@@ -180,11 +192,22 @@ const EmployerCard = ({ element, openModal }) => {
           </p>
         </div>
         <div className="resume">
-          <img
+          {/* <img
             src={element.resume.url}
             alt="resume"
             onClick={() => openModal(element.resume.url)}
-          />
+          /> */}
+          {element.resume.url.endsWith(".pdf") ? (
+            <a href={element.resume.url} target="_blank" rel="noopener noreferrer">
+              View/Download Resume
+            </a>
+          ) : (
+            <img
+              src={element.resume.url}
+              alt="resume"
+              onClick={() => openModal(element.resume.url)}
+            />
+          )}
         </div>
       </div>
     </>

@@ -14,24 +14,21 @@ const HowItWorks = () => {
               <FaUserPlus />
               <p>Create Account</p>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur, culpa.
+                Sign up to create your profile and get started with QuickJob.
               </p>
             </div>
             <div className="card">
               <MdFindInPage />
               <p>Find a Job/Post a Job</p>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur, culpa.
+                Explore job opportunities or post job openings to find the right candidates.
               </p>
             </div>
             <div className="card">
               <IoMdSend />
               <p>Apply For Job/Recruit Suitable Candidates</p>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur, culpa.
+                Submit your application or connect with qualified professionals for your needs.
               </p>
             </div>
           </div>
